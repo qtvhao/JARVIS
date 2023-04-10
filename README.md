@@ -6,6 +6,9 @@
     <img src="https://img.shields.io/badge/%F0%9F%A4%97-Open%20in%20Spaces-blue" alt="Open in Spaces">
 </a>
 
+```shell
+docker build https://github.com/qtvhao/JARVIS.git#main -f server/Dockerfile
+```
 
 ## Updates
 +  [2023.04.06] We added the Gradio demo and built the web API for `/tasks` and `/results` in `server` mode.
