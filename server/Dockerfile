@@ -1,14 +1,11 @@
-# Use a Python 3.8 runtime as a parent image
-FROM python:3.8
+# Use the Anaconda base image as a parent image
+FROM continuumio/anaconda3:latest
 
 # Set the working directory to /app
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
 COPY . /app
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y git-lfs
 
 # Set up the environment
 RUN conda create -n jarvis python=3.8 && \
